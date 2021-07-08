@@ -1,0 +1,37 @@
+-------MVP---------
+The user will start the program, which defaults to a screen with two h2 elements: 'Good Design' & 'Poor Design'. If they select Good Design,
+they will be shown an elevator panel with buttons and labels that properly follow the principles of Archetypes, Consistency, Alignment, and
+Fitt's Law. They have the option to either go back to the first screen, or click on 'Poor Design'. If they click 'Poor Design', they will
+be shown an elevator panel that violates all of the above principles.
+
+Good Design:
+    Archetypes: Buttons are round, and the labels are not. 
+    Consistency: Buttons and Labels don't deviate from a visual pattern.
+    Alignment: Numbers and words are centered within the buttons
+    Fitt's Law: Ground Floor button is biggest and has details, open/close buttons are slightly bigger than floor buttons
+
+Bad Design:
+    Archetypes: Buttons are round like bullet points with numbers inside them, labels are also round with numbers inside them.
+    Consistency: Buttons are given a random margin.
+    Alignment: All numbers and words will be slightly off center.
+    Fitt's Law: Each button is a random size, except for the ground floor and open/close door buttons, which are small and poorly labeled.
+
+
+STRETCH GOALS: 
+    I will program the elevator to work.
+    I will add sound effects.
+
+
+
+---------PSEUDO CODE--------------
+* values that only matter if 
+
+Components:
+    Elevator
+        *state: currentFloor, direction
+        FloorScreen
+            *props: currentFloor
+        FloorButton
+            *props: currentFloor, myFloor=for-loop-index, 
+            *state: clicked
+
