@@ -1,8 +1,8 @@
 -------MVP---------
-The user will start the program, which defaults to a screen with two h2 elements: 'Good Design' & 'Poor Design'. If they select Good Design,
-they will be shown an elevator panel with buttons and labels that properly follow the principles of Archetypes, Consistency, Alignment, and
-Fitt's Law. They have the option to either go back to the first screen, or click on 'Poor Design'. If they click 'Poor Design', they will
-be shown an elevator panel that violates all of the above principles.
+The user will start the program, which defaults to an elevator panel with two radio buttons at the top of the 
+screen: 'Good Design' & 'Poor Design', defaulted to 'Good Design'. On Good Design, they will be shown an elevator panel with buttons and 
+labels that properly follow the principles of Archetypes, Consistency, Alignment, and Fitt's Law. They have the option to click on 
+'Poor Design'. If they click 'Poor Design', they will be shown an elevator panel that violates all of the above principles.
 
 Good Design:
     Archetypes: Buttons are round, and the labels are not. 
@@ -27,6 +27,8 @@ STRETCH GOALS:
 * values that only matter if 
 
 Components:
+    Good.css
+    Bad.css
     Elevator
         *state: currentFloor, direction
         FloorScreen
@@ -34,4 +36,8 @@ Components:
         FloorButton
             *props: currentFloor, myFloor=for-loop-index, 
             *state: clicked
-
+        UtilityPanel
+            Open Button
+            Close Button
+            Alert Button
+                
